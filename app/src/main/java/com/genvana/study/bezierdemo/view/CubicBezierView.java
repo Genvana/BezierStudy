@@ -28,6 +28,11 @@ public class CubicBezierView extends View {
     private Path mPath;
     public CubicBezierView(Context context) {
         super(context);
+        mPaint = new Paint(ANTI_ALIAS_FLAG);
+        mPaint.setARGB(255,253,25,3);
+        mPaint.setStrokeWidth(5);
+        mPaint.setStyle(Paint.Style.STROKE);
+        mPath = new Path();
     }
 
     public CubicBezierView(Context context, AttributeSet attrs) {
